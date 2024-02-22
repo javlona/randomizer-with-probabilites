@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo planner</h1>
+
+      <ul id="todoListEl">
+        <li class="todo-el" onclick="deleteItem(event)">
+          Milk
+          <box-icon
+            onclick="removeItem(event)"
+            name="trash"
+            color="tomato"
+          ></box-icon>
+        </li>
+        <li class="todo-el" onclick="deleteItem(event)">
+          Butter
+          <box-icon
+            onclick="removeItem(event)"
+            name="trash"
+            color="tomato"
+          ></box-icon>
+        </li>
+        <li class="todo-el" onclick="deleteItem(event)">
+          Eggs
+          <box-icon
+            onclick="removeItem(event)"
+            name="trash"
+            color="tomato"
+          ></box-icon>
+        </li>
+      </ul>
+      <input type="text" id="inputTodo" placeholder="enter todos" />
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
